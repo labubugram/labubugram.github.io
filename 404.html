@@ -15,29 +15,32 @@
             overflow: hidden;
         }
 
-        img {
-            max-width: 90vw;          
+        video {
+            max-width: 90vw;               
             max-height: 90vh;
             width: auto;
             height: auto;               
             opacity: 0;
-            animation: gifCycle 12s ease-in-out infinite;   
-            object-fit: contain;
+            animation: videoCycle 15s ease-in-out infinite;
+            object-fit: contain;         
         }
 
-       
-        @keyframes gifCycle {
+        @keyframes videoCycle {
             0%    { opacity: 0; }
-            7%    { opacity: 1; }  
-            78%   { opacity: 1; }  
-            85%   { opacity: 0; }   
+            6.7%  { opacity: 1; }   
+            80%   { opacity: 1; }   
+            86.7% { opacity: 0; }  
             100%  { opacity: 0; }  
         }
     </style>
 </head>
 <body>
 
-    <img src="loop.mp4" alt="">
+    <video autoplay loop muted playsinline preload="auto">
+        <source src="loop.mp4" type="video/mp4">
+
+        Твой браузер не поддерживает видео.
+    </video>
 
 </body>
 </html>
