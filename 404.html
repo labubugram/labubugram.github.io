@@ -8,41 +8,36 @@
         body {
             margin: 0;
             height: 100vh;
-            background: #0d1117;           /* твой любимый фон */
+            background: #0d1117;           
             display: flex;
             justify-content: center;
             align-items: center;
             overflow: hidden;
         }
 
-        video {
-            max-width: 90vw;               /* не вылезает за экран */
+        img {
+            max-width: 90vw;          
             max-height: 90vh;
             width: auto;
-            height: auto;                  /* своя настоящая величина */
+            height: auto;               
             opacity: 0;
-            animation: videoCycle 15s ease-in-out infinite;
-            object-fit: contain;           /* не растягивается */
+            animation: gifCycle 12s ease-in-out infinite;   
+            object-fit: contain;
         }
 
-        /* ЦИКЛ: появляется 1 сек → видно ~11 сек → исчезает 1 сек → пауза ~2 сек */
-        @keyframes videoCycle {
+       
+        @keyframes gifCycle {
             0%    { opacity: 0; }
-            6.7%  { opacity: 1; }   /* плавное появление ~1 секунда */
-            80%   { opacity: 1; }   /* видео играет */
-            86.7% { opacity: 0; }   /* плавное исчезновение ~1 секунда */
-            100%  { opacity: 0; }   /* короткая пауза перед новым циклом */
+            7%    { opacity: 1; }  
+            78%   { opacity: 1; }  
+            85%   { opacity: 0; }   
+            100%  { opacity: 0; }  
         }
     </style>
 </head>
 <body>
 
-    <video autoplay loop muted playsinline preload="auto">
-        <source src="video.mp4" type="video/mp4">
-        <!-- если хочешь другой формат: -->
-        <!-- <source src="video.webm" type="video/webm"> -->
-        Твой браузер не поддерживает видео.
-    </video>
+    <img src="loop.gif" alt="">
 
 </body>
 </html>
