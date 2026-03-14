@@ -2,24 +2,47 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>404 — Страница не найдена</title>
     <style>
         body {
-            font-family: system-ui, -apple-system, sans-serif;
-            text-align: center;
-            padding: 80px 20px;
-            background: #0d1117;
-            color: #c9d1d9;
+            margin: 0;
+            height: 100vh;
+            background: #0d1117;           /* твой любимый фон */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
         }
-        h1 { font-size: 120px; margin: 0; color: #f85149; }
-        p { font-size: 24px; margin: 20px 0; }
-        a { color: #58a6ff; text-decoration: none; font-size: 18px; }
-        a:hover { text-decoration: underline; }
+
+        video {
+            max-width: 90vw;               /* не вылезает за экран */
+            max-height: 90vh;
+            width: auto;
+            height: auto;                  /* своя настоящая величина */
+            opacity: 0;
+            animation: videoCycle 15s ease-in-out infinite;
+            object-fit: contain;           /* не растягивается */
+        }
+
+        /* ЦИКЛ: появляется 1 сек → видно ~11 сек → исчезает 1 сек → пауза ~2 сек */
+        @keyframes videoCycle {
+            0%    { opacity: 0; }
+            6.7%  { opacity: 1; }   /* плавное появление ~1 секунда */
+            80%   { opacity: 1; }   /* видео играет */
+            86.7% { opacity: 0; }   /* плавное исчезновение ~1 секунда */
+            100%  { opacity: 0; }   /* короткая пауза перед новым циклом */
+        }
     </style>
 </head>
 <body>
-    <h1>404</h1>
-    <p>Упс! Такой страницы не существует.</p>
-    <a href="/">← Вернуться на главную</a>
+
+    <video autoplay loop muted playsinline preload="auto">
+        <source src="video.mp4" type="video/mp4">
+        <!-- если хочешь другой формат: -->
+        <!-- <source src="video.webm" type="video/webm"> -->
+        Твой браузер не поддерживает видео.
+    </video>
+
 </body>
 </html>
