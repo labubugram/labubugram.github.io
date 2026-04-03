@@ -95,6 +95,13 @@
             font-weight: 600;
             color: white;
             flex-shrink: 0;
+            overflow: hidden;
+        }
+        
+        .channel-card-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
         
         .channel-card-info {
@@ -264,9 +271,7 @@
                 <div class="channels-grid">
             
                 <a class="channel-card" href="/tg/bbbreaking/" data-username="bbbreaking" data-name="раньше всех. ну почти.">
-                    <div class="channel-card-avatar" style="background: #50a95e">
-                        Р
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="bbbreaking" data-letter="Р" style="background: #50a95e">Р</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">Раньше всех. Ну почти.</div>
                         <div class="channel-card-username">@bbbreaking</div>
@@ -275,9 +280,7 @@
                 </a>
             
                 <a class="channel-card" href="/tg/rian_ru/" data-username="rian_ru" data-name="риа новости">
-                    <div class="channel-card-avatar" style="background: #ed4a4a">
-                        Р
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="rian_ru" data-letter="Р" style="background: #ed4a4a">Р</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">РИА Новости</div>
                         <div class="channel-card-username">@rian_ru</div>
@@ -286,9 +289,7 @@
                 </a>
             
                 <a class="channel-card" href="/tg/tass_agency/" data-username="tass_agency" data-name="тасс">
-                    <div class="channel-card-avatar" style="background: #2ecc71">
-                        Т
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="tass_agency" data-letter="Т" style="background: #2ecc71">Т</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">ТАСС</div>
                         <div class="channel-card-username">@tass_agency</div>
@@ -297,9 +298,7 @@
                 </a>
             
                 <a class="channel-card" href="/tg/gov_korotko/" data-username="gov_korotko" data-name="правительство рф. коротко">
-                    <div class="channel-card-avatar" style="background: #8e44ad">
-                        П
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="gov_korotko" data-letter="П" style="background: #8e44ad">П</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">Правительство РФ. Коротко</div>
                         <div class="channel-card-username">@gov_korotko</div>
@@ -308,9 +307,7 @@
                 </a>
 
                 <a class="channel-card" href="/tg/news_kremlin/" data-username="news_kremlin" data-name="кремль. новости">
-                    <div class="channel-card-avatar" style="background: #8e44ad">
-                        К
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="news_kremlin" data-letter="К" style="background: #8e44ad">К</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">Кремль. Новости</div>
                         <div class="channel-card-username">@news_kremlin</div>
@@ -319,9 +316,7 @@
                 </a>
             
                 <a class="channel-card" href="/tg/rbc_news/" data-username="rbc_news" data-name="рбк. новости. главное">
-                    <div class="channel-card-avatar" style="background: #50a95e">
-                        Р
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="rbc_news" data-letter="Р" style="background: #50a95e">Р</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">РБК. Новости. Главное</div>
                         <div class="channel-card-username">@rbc_news</div>
@@ -330,9 +325,7 @@
                 </a>
             
                 <a class="channel-card" href="/tg/kontext_channel/" data-username="kontext_channel" data-name="контекст">
-                    <div class="channel-card-avatar" style="background: #e67e22">
-                        К
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="kontext_channel" data-letter="К" style="background: #e67e22">К</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">КОНТЕКСТ</div>
                         <div class="channel-card-username">@kontext_channel</div>
@@ -341,9 +334,7 @@
                 </a>
 
                 <a class="channel-card" href="/tg/banksta/" data-username="banksta" data-name="банкста">
-                    <div class="channel-card-avatar" style="background: #2481cc">
-                        Б
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="banksta" data-letter="Б" style="background: #2481cc">Б</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">Банкста</div>
                         <div class="channel-card-username">@banksta</div>
@@ -352,9 +343,7 @@
                 </a>
 
                 <a class="channel-card" href="/tg/fontankaspb/" data-username="fontankaspb" data-name="фонтанка spb online">
-                    <div class="channel-card-avatar" style="background: #e67e22">
-                        Ф
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="fontankaspb" data-letter="Ф" style="background: #e67e22">Ф</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">Фонтанка SPB Online</div>
                         <div class="channel-card-username">@fontankaspb</div>
@@ -363,9 +352,7 @@
                 </a>
             
                 <a class="channel-card" href="/tg/kuban24/" data-username="kuban24" data-name="кубань 24">
-                    <div class="channel-card-avatar" style="background: #50a95e">
-                        К
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="kuban24" data-letter="К" style="background: #50a95e">К</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">Кубань 24</div>
                         <div class="channel-card-username">@kuban24</div>
@@ -374,9 +361,7 @@
                 </a>
             
                 <a class="channel-card" href="/tg/SouWan/" data-username="SouWan" data-name="sou wan">
-                    <div class="channel-card-avatar" style="background: #e67e22">
-                        S
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="SouWan" data-letter="S" style="background: #e67e22">S</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">Sou Wan</div>
                         <div class="channel-card-username">@SouWan</div>
@@ -392,9 +377,7 @@
                 <div class="channels-grid">
             
                 <a class="channel-card" href="/tg/medvedev_telegram/" data-username="medvedev_telegram" data-name="дмитрий медведев">
-                    <div class="channel-card-avatar" style="background: #ed4a4a">
-                        Д
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="medvedev_telegram" data-letter="Д" style="background: #ed4a4a">Д</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">Дмитрий Медведев</div>
                         <div class="channel-card-username">@medvedev_telegram</div>
@@ -403,9 +386,7 @@
                 </a>
                     
                 <a class="channel-card" href="/tg/Agdchan/" data-username="Agdchan" data-name="agdchan">
-                    <div class="channel-card-avatar" style="background: #9b59b6">
-                        A
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="Agdchan" data-letter="A" style="background: #9b59b6">A</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">AGDchan</div>
                         <div class="channel-card-username">@Agdchan</div>
@@ -414,9 +395,7 @@
                 </a>
 
                 <a class="channel-card" href="/tg/ASupersharij/" data-username="ASupersharij" data-name="анатолий шарий">
-                    <div class="channel-card-avatar" style="background: #f39c12">
-                        А
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="ASupersharij" data-letter="А" style="background: #f39c12">А</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">Анатолий Шарий</div>
                         <div class="channel-card-username">@ASupersharij</div>
@@ -425,9 +404,7 @@
                 </a>
 
                 <a class="channel-card" href="/tg/drozdenko_au_lo/" data-username="drozdenko_au_lo" data-name="александр дроzденко">
-                    <div class="channel-card-avatar" style="background: #2ecc71">
-                        А
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="drozdenko_au_lo" data-letter="А" style="background: #2ecc71">А</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">Александр ДроZденко</div>
                         <div class="channel-card-username">@drozdenko_au_lo</div>
@@ -436,9 +413,7 @@
                 </a>
 
                 <a class="channel-card" href="/tg/ekaterina_mizulina/" data-username="ekaterina_mizulina" data-name="екатерина мизулина">
-                    <div class="channel-card-avatar" style="background: #1abc9c">
-                        Е
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="ekaterina_mizulina" data-letter="Е" style="background: #1abc9c">Е</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">Екатерина Мизулина</div>
                         <div class="channel-card-username">@ekaterina_mizulina</div>
@@ -447,9 +422,7 @@
                 </a>
             
                 <a class="channel-card" href="/tg/bloodysx/" data-username="bloodysx" data-name="кровавая барыня">
-                    <div class="channel-card-avatar" style="background: #8e44ad">
-                        К
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="bloodysx" data-letter="К" style="background: #8e44ad">К</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">Кровавая барыня</div>
                         <div class="channel-card-username">@bloodysx</div>
@@ -458,9 +431,7 @@
                 </a>
             
                 <a class="channel-card" href="/tg/bponline/" data-username="bponline" data-name="бп онлайн">
-                    <div class="channel-card-avatar" style="background: #e67e22">
-                        Б
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="bponline" data-letter="Б" style="background: #e67e22">Б</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">БП онлайн</div>
                         <div class="channel-card-username">@bponline</div>
@@ -469,9 +440,7 @@
                 </a>
 
                 <a class="channel-card" href="/tg/veronikastepanova20011/" data-username="veronikastepanova20011" data-name="вероника степанова">
-                    <div class="channel-card-avatar" style="background: #8e44ad">
-                        В
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="veronikastepanova20011" data-letter="В" style="background: #8e44ad">В</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">Вероника Степанова</div>
                         <div class="channel-card-username">@veronikastepanova20011</div>
@@ -480,9 +449,7 @@
                 </a>
             
                 <a class="channel-card" href="/tg/petrovtel/" data-username="petrovtel" data-name="кк">
-                    <div class="channel-card-avatar" style="background: #3498db">
-                        К
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="petrovtel" data-letter="К" style="background: #3498db">К</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">КК</div>
                         <div class="channel-card-username">@petrovtel</div>
@@ -491,9 +458,7 @@
                 </a>
 
                 <a class="channel-card" href="/tg/kamenschiki/" data-username="kamenschiki" data-name="безвольные каменщики">
-                    <div class="channel-card-avatar" style="background: #2ecc71">
-                        Б
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="kamenschiki" data-letter="Б" style="background: #2ecc71">Б</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">Безвольные каменщики</div>
                         <div class="channel-card-username">@kamenschiki</div>
@@ -502,9 +467,7 @@
                 </a>
 
                 <a class="channel-card" href="/tg/muroxamma/" data-username="muroxamma" data-name="мурохамма">
-                    <div class="channel-card-avatar" style="background: #f39c12">
-                        М
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="muroxamma" data-letter="М" style="background: #f39c12">М</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">мурохамма</div>
                         <div class="channel-card-username">@muroxamma</div>
@@ -520,9 +483,7 @@
                 <div class="channels-grid">
                 
                 <a class="channel-card" href="/tg/opennet_ru/" data-username="opennet_ru" data-name="opennet.ru">
-                    <div class="channel-card-avatar" style="background: #3498db">
-                        O
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="opennet_ru" data-letter="O" style="background: #3498db">O</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">opennet.ru</div>
                         <div class="channel-card-username">@opennet_ru</div>
@@ -531,9 +492,7 @@
                 </a>
             
                 <a class="channel-card" href="/tg/SecLabm/" data-username="SecLabm" data-name="seclab советы">
-                    <div class="channel-card-avatar" style="background: #f39c12">
-                        S
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="SecLabm" data-letter="S" style="background: #f39c12">S</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">SecLab советы</div>
                         <div class="channel-card-username">@SecLabm</div>
@@ -542,9 +501,7 @@
                 </a>
             
                 <a class="channel-card" href="/tg/opennews/" data-username="opennews" data-name="opennews">
-                    <div class="channel-card-avatar" style="background: #2ecc71">
-                        O
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="opennews" data-letter="O" style="background: #2ecc71">O</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">OpenNews</div>
                         <div class="channel-card-username">@opennews</div>
@@ -553,9 +510,7 @@
                 </a>
             
                 <a class="channel-card" href="/tg/SecLabNews/" data-username="SecLabNews" data-name="securitylab.ru">
-                    <div class="channel-card-avatar" style="background: #3498db">
-                        S
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="SecLabNews" data-letter="S" style="background: #3498db">S</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">SecurityLab.ru</div>
                         <div class="channel-card-username">@SecLabNews</div>
@@ -564,9 +519,7 @@
                 </a>
 
                 <a class="channel-card" href="/tg/whackdoor/" data-username="whackdoor" data-name="бэкдор">
-                    <div class="channel-card-avatar" style="background: #ed4a4a">
-                        Б
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="whackdoor" data-letter="Б" style="background: #ed4a4a">Б</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">Бэкдор</div>
                         <div class="channel-card-username">@whackdoor</div>
@@ -575,9 +528,7 @@
                 </a>
 
                 <a class="channel-card" href="/tg/denissexy/" data-username="denissexy" data-name="denis sexy it 🤖">
-                    <div class="channel-card-avatar" style="background: #9b59b6">
-                        D
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="denissexy" data-letter="D" style="background: #9b59b6">D</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">Denis Sexy IT 🤖</div>
                         <div class="channel-card-username">@denissexy</div>
@@ -586,9 +537,7 @@
                 </a>
             
                 <a class="channel-card" href="/tg/machinedependent/" data-username="machinedependent" data-name="machine-dependent">
-                    <div class="channel-card-avatar" style="background: #1abc9c">
-                        M
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="machinedependent" data-letter="M" style="background: #1abc9c">M</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">Machine-Dependent</div>
                         <div class="channel-card-username">@machinedependent</div>
@@ -597,9 +546,7 @@
                 </a>
             
                 <a class="channel-card" href="/tg/d_code/" data-username="d_code" data-name="код дурова">
-                    <div class="channel-card-avatar" style="background: #1abc9c">
-                        К
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="d_code" data-letter="К" style="background: #1abc9c">К</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">Код Дурова</div>
                         <div class="channel-card-username">@d_code</div>
@@ -608,9 +555,7 @@
                 </a>
             
                 <a class="channel-card" href="/tg/habr_com/" data-username="habr_com" data-name="хабр">
-                    <div class="channel-card-avatar" style="background: #3498db">
-                        Х
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="habr_com" data-letter="Х" style="background: #3498db">Х</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">Хабр</div>
                         <div class="channel-card-username">@habr_com</div>
@@ -619,9 +564,7 @@
                 </a>
             
                 <a class="channel-card" href="/tg/exploitex/" data-username="exploitex" data-name="эксплойт">
-                    <div class="channel-card-avatar" style="background: #8e44ad">
-                        Э
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="exploitex" data-letter="Э" style="background: #8e44ad">Э</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">Эксплойт</div>
                         <div class="channel-card-username">@exploitex</div>
@@ -630,9 +573,7 @@
                 </a>
             
                 <a class="channel-card" href="/tg/omendisplay/" data-username="omendisplay" data-name="labubugram.github.io">
-                    <div class="channel-card-avatar" style="background: #2ecc71">
-                        L
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="omendisplay" data-letter="L" style="background: #2ecc71">L</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">labubugram.github.io</div>
                         <div class="channel-card-username">@omendisplay</div>
@@ -648,9 +589,7 @@
                 <div class="channels-grid">
                     
                 <a class="channel-card" href="/tg/theartsmuseum/" data-username="theartsmuseum" data-name="пушкинский музей">
-                    <div class="channel-card-avatar" style="background: #50a95e">
-                        П
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="theartsmuseum" data-letter="П" style="background: #50a95e">П</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">Пушкинский музей</div>
                         <div class="channel-card-username">@theartsmuseum</div>
@@ -659,9 +598,7 @@
                 </a>
 
                 <a class="channel-card" href="/tg/svetskoe/" data-username="svetskoe" data-name="светское советское!">
-                    <div class="channel-card-avatar" style="background: #8e44ad">
-                        С
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="svetskoe" data-letter="С" style="background: #8e44ad">С</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">Светское советское!</div>
                         <div class="channel-card-username">@svetskoe</div>
@@ -670,9 +607,7 @@
                 </a>
             
                 <a class="channel-card" href="/tg/devianostyye/" data-username="devianostyye" data-name="девяностые">
-                    <div class="channel-card-avatar" style="background: #1abc9c">
-                        Д
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="devianostyye" data-letter="Д" style="background: #1abc9c">Д</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">Девяностые</div>
                         <div class="channel-card-username">@devianostyye</div>
@@ -681,9 +616,7 @@
                 </a>
 
                 <a class="channel-card" href="/tg/old_Moscow/" data-username="old_Moscow" data-name="старая москва">
-                    <div class="channel-card-avatar" style="background: #1abc9c">
-                        С
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="old_Moscow" data-letter="С" style="background: #1abc9c">С</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">Старая Москва</div>
                         <div class="channel-card-username">@old_Moscow</div>
@@ -692,9 +625,7 @@
                 </a>
             
                 <a class="channel-card" href="/tg/chronograph_life/" data-username="chronograph_life" data-name="хронограф">
-                    <div class="channel-card-avatar" style="background: #2481cc">
-                        Х
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="chronograph_life" data-letter="Х" style="background: #2481cc">Х</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">Хронограф</div>
                         <div class="channel-card-username">@chronograph_life</div>
@@ -703,9 +634,7 @@
                 </a>
             
                 <a class="channel-card" href="/tg/videoshkaf/" data-username="videoshkaf" data-name="шкаф с кассетами">
-                    <div class="channel-card-avatar" style="background: #2481cc">
-                        Ш
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="videoshkaf" data-letter="Ш" style="background: #2481cc">Ш</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">Шкаф с кассетами</div>
                         <div class="channel-card-username">@videoshkaf</div>
@@ -721,9 +650,7 @@
                 <div class="channels-grid">
             
                 <a class="channel-card" href="/tg/ZOp4_telega/" data-username="ZOp4_telega" data-name="zорч🚩">
-                    <div class="channel-card-avatar" style="background: #8e44ad">
-                        Z
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="ZOp4_telega" data-letter="Z" style="background: #8e44ad">Z</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">ZОРЧ🚩</div>
                         <div class="channel-card-username">@ZOp4_telega</div>
@@ -732,9 +659,7 @@
                 </a>
             
                 <a class="channel-card" href="/tg/lastoppo/" data-username="lastoppo" data-name="а вот мой яндекс кошелек">
-                    <div class="channel-card-avatar" style="background: #ed4a4a">
-                        А
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="lastoppo" data-letter="А" style="background: #ed4a4a">А</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">а вот мой яндекс кошелек</div>
                         <div class="channel-card-username">@lastoppo</div>
@@ -743,9 +668,7 @@
                 </a>
 
                 <a class="channel-card" href="/tg/femalememes/" data-username="femalememes" data-name="female memes">
-                    <div class="channel-card-avatar" style="background: #f39c12">
-                        F
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="femalememes" data-letter="F" style="background: #f39c12">F</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">FEMALE MEMES</div>
                         <div class="channel-card-username">@femalememes</div>
@@ -754,9 +677,7 @@
                 </a>
                         
                 <a class="channel-card" href="/tg/pophistory/" data-username="pophistory" data-name="страдающее средневековье">
-                    <div class="channel-card-avatar" style="background: #50a95e">
-                        С
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="pophistory" data-letter="С" style="background: #50a95e">С</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">Страдающее Средневековье</div>
                         <div class="channel-card-username">@pophistory</div>
@@ -765,9 +686,7 @@
                 </a>
                 
                 <a class="channel-card" href="/tg/PeeAcE_DaTa/" data-username="PeeAcE_DaTa" data-name="𝙋𝙚𝘼𝙘𝙀_𝘿𝙖𝙏𝙖">
-                    <div class="channel-card-avatar" style="background: #1abc9c">
-                        𝙋
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="PeeAcE_DaTa" data-letter="P" style="background: #1abc9c">P</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">𝙋𝙚𝘼𝙘𝙀_𝘿𝙖𝙏𝙖</div>
                         <div class="channel-card-username">@PeeAcE_DaTa</div>
@@ -776,9 +695,7 @@
                 </a>
             
                 <a class="channel-card" href="/tg/Lepragram/" data-username="Lepragram" data-name="лепра">
-                    <div class="channel-card-avatar" style="background: #f39c12">
-                        Л
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="Lepragram" data-letter="Л" style="background: #f39c12">Л</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">Лепра</div>
                         <div class="channel-card-username">@Lepragram</div>
@@ -787,9 +704,7 @@
                 </a>
 
                 <a class="channel-card" href="/tg/wristpuma/" data-username="wristpuma" data-name="запястье пумы">
-                    <div class="channel-card-avatar" style="background: #8e44ad">
-                        З
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="wristpuma" data-letter="З" style="background: #8e44ad">З</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">Запястье Пумы</div>
                         <div class="channel-card-username">@wristpuma</div>
@@ -798,9 +713,7 @@
                 </a>
             
                 <a class="channel-card" href="/tg/soymem/" data-username="soymem" data-name="философский кукож">
-                    <div class="channel-card-avatar" style="background: #1abc9c">
-                        Ф
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="soymem" data-letter="Ф" style="background: #1abc9c">Ф</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">Философский Кукож</div>
                         <div class="channel-card-username">@soymem</div>
@@ -809,9 +722,7 @@
                 </a>
             
                 <a class="channel-card" href="/tg/insect_life/" data-username="insect_life" data-name="жизнь насекомых">
-                    <div class="channel-card-avatar" style="background: #3498db">
-                        Ж
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="insect_life" data-letter="Ж" style="background: #3498db">Ж</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">Жизнь насекомых</div>
                         <div class="channel-card-username">@insect_life</div>
@@ -820,9 +731,7 @@
                 </a>
             
                 <a class="channel-card" href="/tg/for5oclock/" data-username="for5oclock" data-name="фуфайки клок">
-                    <div class="channel-card-avatar" style="background: #e67e22">
-                        Ф
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="for5oclock" data-letter="Ф" style="background: #e67e22">Ф</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">Фуфайки Клок</div>
                         <div class="channel-card-username">@for5oclock</div>
@@ -831,9 +740,7 @@
                 </a>
             
                 <a class="channel-card" href="/tg/rebel_jack_review/" data-username="rebel_jack_review" data-name="мятежник джек">
-                    <div class="channel-card-avatar" style="background: #2ecc71">
-                        М
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="rebel_jack_review" data-letter="М" style="background: #2ecc71">М</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">Мятежник Джек</div>
                         <div class="channel-card-username">@rebel_jack_review</div>
@@ -842,9 +749,7 @@
                 </a>
             
                 <a class="channel-card" href="/tg/KOROL_OREL/" data-username="KOROL_OREL" data-name="пастух безногих коров">
-                    <div class="channel-card-avatar" style="background: #ed4a4a">
-                        П
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="KOROL_OREL" data-letter="П" style="background: #ed4a4a">П</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">пастух безногих коров</div>
                         <div class="channel-card-username">@KOROL_OREL</div>
@@ -853,9 +758,7 @@
                 </a>
             
                 <a class="channel-card" href="/tg/bad_lama/" data-username="bad_lama" data-name="плохая лама">
-                    <div class="channel-card-avatar" style="background: #50a95e">
-                        П
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="bad_lama" data-letter="П" style="background: #50a95e">П</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">Плохая лама</div>
                         <div class="channel-card-username">@bad_lama</div>
@@ -864,9 +767,7 @@
                 </a>
 
                 <a class="channel-card" href="/tg/ia_panorama/" data-username="ia_panorama" data-name="иа панорама">
-                    <div class="channel-card-avatar" style="background: #8e44ad">
-                        И
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="ia_panorama" data-letter="И" style="background: #8e44ad">И</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">ИА Панорама</div>
                         <div class="channel-card-username">@ia_panorama</div>
@@ -875,9 +776,7 @@
                 </a>
             
                 <a class="channel-card" href="/tg/hardmemecafe/" data-username="hardmemecafe" data-name="hardmeme cafe">
-                    <div class="channel-card-avatar" style="background: #8e44ad">
-                        H
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="hardmemecafe" data-letter="H" style="background: #8e44ad">H</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">HardMeme Cafe</div>
                         <div class="channel-card-username">@hardmemecafe</div>
@@ -886,9 +785,7 @@
                 </a>
             
                 <a class="channel-card" href="/tg/not_in_love/" data-username="not_in_love" data-name="любовь не взаимна ❤️‍🩹">
-                    <div class="channel-card-avatar" style="background: #2481cc">
-                        Л
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="not_in_love" data-letter="Л" style="background: #2481cc">Л</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">Любовь не взаимна ❤️‍🩹</div>
                         <div class="channel-card-username">@not_in_love</div>
@@ -897,9 +794,7 @@
                 </a>
             
                 <a class="channel-card" href="/tg/malchish_bad/" data-username="malchish_bad" data-name="мальчиш плохиш">
-                    <div class="channel-card-avatar" style="background: #50a95e">
-                        М
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="malchish_bad" data-letter="М" style="background: #50a95e">М</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">Мальчиш Плохиш</div>
                         <div class="channel-card-username">@malchish_bad</div>
@@ -908,9 +803,7 @@
                 </a>
             
                 <a class="channel-card" href="/tg/vasiileevaa/" data-username="vasiileevaa" data-name="мелана:) неизданное">
-                    <div class="channel-card-avatar" style="background: #ed4a4a">
-                        М
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="vasiileevaa" data-letter="М" style="background: #ed4a4a">М</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">мелана:) неизданное</div>
                         <div class="channel-card-username">@vasiileevaa</div>
@@ -919,9 +812,7 @@
                 </a>
 
                 <a class="channel-card" href="/tg/s4vepic/" data-username="s4vepic" data-name="save pic">
-                    <div class="channel-card-avatar" style="background: #ed4a4a">
-                        S
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="s4vepic" data-letter="S" style="background: #ed4a4a">S</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">Save pic</div>
                         <div class="channel-card-username">@s4vepic</div>
@@ -930,9 +821,7 @@
                 </a>
             
                 <a class="channel-card" href="/tg/memy_meme/" data-username="memy_meme" data-name="высокоранговые мемы">
-                    <div class="channel-card-avatar" style="background: #e67e22">
-                        В
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="memy_meme" data-letter="В" style="background: #e67e22">В</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">Высокоранговые мемы</div>
                         <div class="channel-card-username">@memy_meme</div>
@@ -941,9 +830,7 @@
                 </a>
             
                 <a class="channel-card" href="/tg/christymemes/" data-username="christymemes" data-name="крис, где мемы?">
-                    <div class="channel-card-avatar" style="background: #2ecc71">
-                        К
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="christymemes" data-letter="К" style="background: #2ecc71">К</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">Крис, где мемы?</div>
                         <div class="channel-card-username">@christymemes</div>
@@ -952,9 +839,7 @@
                 </a>
             
                 <a class="channel-card" href="/tg/picchiiiiii/" data-username="picchiiiiii" data-name="пикчи разной степени абсурдности">
-                    <div class="channel-card-avatar" style="background: #2ecc71">
-                        П
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="picchiiiiii" data-letter="П" style="background: #2ecc71">П</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">Пикчи разной степени абсурдности</div>
                         <div class="channel-card-username">@picchiiiiii</div>
@@ -970,9 +855,7 @@
                 <div class="channels-grid">
                     
                 <a class="channel-card" href="/tg/OANNTV/" data-username="OANNTV" data-name="one america news network">
-                    <div class="channel-card-avatar" style="background: #2481cc">
-                        O
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="OANNTV" data-letter="O" style="background: #2481cc">O</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">One America News Network</div>
                         <div class="channel-card-username">@OANNTV</div>
@@ -981,9 +864,7 @@
                 </a>
             
                 <a class="channel-card" href="/tg/guardian/" data-username="guardian" data-name="the guardian">
-                    <div class="channel-card-avatar" style="background: #f39c12">
-                        T
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="guardian" data-letter="T" style="background: #f39c12">T</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">The Guardian</div>
                         <div class="channel-card-username">@guardian</div>
@@ -992,9 +873,7 @@
                 </a>
             
                 <a class="channel-card" href="/tg/nytimes/" data-username="nytimes" data-name="the new york times">
-                    <div class="channel-card-avatar" style="background: #3498db">
-                        T
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="nytimes" data-letter="T" style="background: #3498db">T</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">The New York Times</div>
                         <div class="channel-card-username">@nytimes</div>
@@ -1003,9 +882,7 @@
                 </a>
                         
                 <a class="channel-card" href="/tg/rezident_ua/" data-username="rezident_ua" data-name="резидент">
-                    <div class="channel-card-avatar" style="background: #9b59b6">
-                        Р
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="rezident_ua" data-letter="Р" style="background: #9b59b6">Р</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">Резидент</div>
                         <div class="channel-card-username">@rezident_ua</div>
@@ -1014,9 +891,7 @@
                 </a>
                         
                 <a class="channel-card" href="/tg/akhbare_fouri/" data-username="akhbare_fouri" data-name="اخبار فوری / مهم 🔖">
-                    <div class="channel-card-avatar" style="background: #ed4a4a">
-                        ا
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="akhbare_fouri" data-letter="ا" style="background: #ed4a4a">ا</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">اخبار فوری / مهم 🔖</div>
                         <div class="channel-card-username">@akhbare_fouri</div>
@@ -1025,9 +900,7 @@
                 </a>
                         
                 <a class="channel-card" href="/tg/insiderpaper/" data-username="insiderpaper" data-name="insider paper">
-                    <div class="channel-card-avatar" style="background: #1abc9c">
-                        I
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="insiderpaper" data-letter="I" style="background: #1abc9c">I</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">Insider Paper</div>
                         <div class="channel-card-username">@insiderpaper</div>
@@ -1043,9 +916,7 @@
                 <div class="channels-grid">
 
                 <a class="channel-card" href="/tg/warmonitors/" data-username="warmonitors" data-name="war monitor">
-                    <div class="channel-card-avatar" style="background: #50a95e">
-                        W
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="warmonitors" data-letter="W" style="background: #50a95e">W</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">War Monitor</div>
                         <div class="channel-card-username">@warmonitors</div>
@@ -1054,9 +925,7 @@
                 </a>
 
                 <a class="channel-card" href="/tg/warcabinet/" data-username="warcabinet" data-name="warcabinet">
-                    <div class="channel-card-avatar" style="background: #1abc9c">
-                        W
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="warcabinet" data-letter="W" style="background: #1abc9c">W</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">WarCabinet</div>
                         <div class="channel-card-username">@warcabinet</div>
@@ -1065,9 +934,7 @@
                 </a>
             
                 <a class="channel-card" href="/tg/FotrosResistancee/" data-username="FotrosResistancee" data-name="fotros resistance">
-                    <div class="channel-card-avatar" style="background: #2ecc71">
-                        F
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="FotrosResistancee" data-letter="F" style="background: #2ecc71">F</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">Fotros Resistance</div>
                         <div class="channel-card-username">@FotrosResistancee</div>
@@ -1083,9 +950,7 @@
                 <div class="channels-grid">
            
                 <a class="channel-card" href="/tg/fotoartset/" data-username="fotoartset" data-name="argentum">
-                    <div class="channel-card-avatar" style="background: #2ecc71">
-                        A
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="fotoartset" data-letter="A" style="background: #2ecc71">A</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">Argentum</div>
                         <div class="channel-card-username">@fotoartset</div>
@@ -1094,9 +959,7 @@
                 </a>
                         
                 <a class="channel-card" href="/tg/LostGen/" data-username="LostGen" data-name="эпоха 90-х">
-                    <div class="channel-card-avatar" style="background: #2481cc">
-                        Э
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="LostGen" data-letter="Э" style="background: #2481cc">Э</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">Эпоха 90-х</div>
                         <div class="channel-card-username">@LostGen</div>
@@ -1105,9 +968,7 @@
                 </a>
             
                 <a class="channel-card" href="/tg/knopka_az5/" data-username="knopka_az5" data-name="восьмидесятые">
-                    <div class="channel-card-avatar" style="background: #50a95e">
-                        В
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="knopka_az5" data-letter="В" style="background: #50a95e">В</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">Восьмидесятые</div>
                         <div class="channel-card-username">@knopka_az5</div>
@@ -1123,9 +984,7 @@
                 <div class="channels-grid">
                     
                     <a class="channel-card" href="/tg/popscienceru/" data-username="popscienceru" data-name="загадки истории с лысым камрадом">
-                        <div class="channel-card-avatar" style="background: #1abc9c">
-                            З
-                        </div>
+                        <div class="channel-card-avatar" data-avatar="popscienceru" data-letter="З" style="background: #1abc9c">З</div>
                         <div class="channel-card-info">
                             <div class="channel-card-name">Загадки истории с Лысым Камрадом</div>
                             <div class="channel-card-username">@popscienceru</div>
@@ -1134,9 +993,7 @@
                     </a>
 
                 <a class="channel-card" href="/tg/antropogenez_ru/" data-username="antropogenez_ru" data-name="антропогенез.ru">
-                    <div class="channel-card-avatar" style="background: #8e44ad">
-                        А
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="antropogenez_ru" data-letter="А" style="background: #8e44ad">А</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">АНТРОПОГЕНЕЗ.RU</div>
                         <div class="channel-card-username">@antropogenez_ru</div>
@@ -1145,9 +1002,7 @@
                 </a>
             
                 <a class="channel-card" href="/tg/reptilium_official/" data-username="reptilium_official" data-name="рептилиум reptilium">
-                    <div class="channel-card-avatar" style="background: #50a95e">
-                        Р
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="reptilium_official" data-letter="Р" style="background: #50a95e">Р</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">Рептилиум Reptilium</div>
                         <div class="channel-card-username">@reptilium_official</div>
@@ -1156,9 +1011,7 @@
                 </a>
 
                 <a class="channel-card" href="/tg/roscosmos_press/" data-username="roscosmos_press" data-name="закрытый космос">
-                    <div class="channel-card-avatar" style="background: #ed4a4a">
-                        З
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="roscosmos_press" data-letter="З" style="background: #ed4a4a">З</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">Закрытый космос</div>
                         <div class="channel-card-username">@roscosmos_press</div>
@@ -1167,9 +1020,7 @@
                 </a>
                         
                 <a class="channel-card" href="/tg/beetles_of_the_world/" data-username="beetles_of_the_world" data-name="beetles of the world">
-                    <div class="channel-card-avatar" style="background: #50a95e">
-                        B
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="beetles_of_the_world" data-letter="B" style="background: #50a95e">B</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">Beetles of the World</div>
                         <div class="channel-card-username">@beetles_of_the_world</div>
@@ -1178,9 +1029,7 @@
                 </a>
             
                 <a class="channel-card" href="/tg/herpetologvolga/" data-username="herpetologvolga" data-name="записки натуралиста 🦎">
-                    <div class="channel-card-avatar" style="background: #9b59b6">
-                        З
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="herpetologvolga" data-letter="З" style="background: #9b59b6">З</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">Записки натуралиста 🦎</div>
                         <div class="channel-card-username">@herpetologvolga</div>
@@ -1189,9 +1038,7 @@
                 </a>
             
                 <a class="channel-card" href="/tg/ScienceInquisition/" data-username="ScienceInquisition" data-name="александр панчин">
-                    <div class="channel-card-avatar" style="background: #9b59b6">
-                        А
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="ScienceInquisition" data-letter="А" style="background: #9b59b6">А</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">Александр Панчин</div>
                         <div class="channel-card-username">@ScienceInquisition</div>
@@ -1200,9 +1047,7 @@
                 </a>
             
                 <a class="channel-card" href="/tg/linguisticstory/" data-username="linguisticstory" data-name="лингвистические истории">
-                    <div class="channel-card-avatar" style="background: #2481cc">
-                        Л
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="linguisticstory" data-letter="Л" style="background: #2481cc">Л</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">Лингвистические истории</div>
                         <div class="channel-card-username">@linguisticstory</div>
@@ -1211,9 +1056,7 @@
                 </a>
 
                 <a class="channel-card" href="/tg/nplusone/" data-username="nplusone" data-name="n + 1">
-                    <div class="channel-card-avatar" style="background: #8e44ad">
-                        N
-                    </div>
+                    <div class="channel-card-avatar" data-avatar="nplusone" data-letter="N" style="background: #8e44ad">N</div>
                     <div class="channel-card-info">
                         <div class="channel-card-name">N + 1</div>
                         <div class="channel-card-username">@nplusone</div>
@@ -1235,7 +1078,7 @@
         </div>
         
         <div class="stats" id="stats">
-            Обновлено: 01.04.2026
+            Обновлено: 03.04.2026
         </div>
         
 
@@ -1308,11 +1151,51 @@
             }
         }
         
+        // Функция для загрузки аватаров
+        function loadAvatars() {
+            const avatarElements = document.querySelectorAll('.channel-card-avatar');
+            
+            avatarElements.forEach(avatarDiv => {
+                const username = avatarDiv.getAttribute('data-avatar');
+                const letter = avatarDiv.getAttribute('data-letter');
+                const bgColor = avatarDiv.style.background;
+                
+                if (!username) return;
+                
+                const avatarUrl = `https://raw.githubusercontent.com/labubugram/tg/main/${username}/avatar.jpg`;
+                
+                const img = new Image();
+                img.onload = function() {
+                    // Аватар найден - показываем картинку
+                    avatarDiv.innerHTML = '';
+                    avatarDiv.style.background = 'transparent';
+                    avatarDiv.appendChild(img);
+                    img.style.display = 'block';
+                };
+                
+                img.onerror = function() {
+                    // Аватар не найден - оставляем букву
+                    avatarDiv.innerHTML = letter;
+                    avatarDiv.style.background = bgColor;
+                    avatarDiv.style.display = 'flex';
+                    avatarDiv.style.alignItems = 'center';
+                    avatarDiv.style.justifyContent = 'center';
+                };
+                
+                img.src = avatarUrl;
+                img.style.width = '100%';
+                img.style.height = '100%';
+                img.style.borderRadius = '50%';
+                img.style.objectFit = 'cover';
+                img.style.display = 'none';
+            });
+        }
         
         // Инициализация
         document.addEventListener('DOMContentLoaded', () => {
             setupSearch();
             initTheme();
+            loadAvatars();
         });
     </script>
 </body>
